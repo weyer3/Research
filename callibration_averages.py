@@ -41,9 +41,10 @@ def plot_thermistors(df, row_min,row_max, apparatus_type,title ):
 
         x+=2
         i+=1
-    plt.show()
     mytitle = format("%s.png" % (title))
     plt.savefig(mytitle)
+    plt.show()
+    
     
     
 df_cut = df.iloc[40:80,1:25]
